@@ -23,6 +23,10 @@ li {
   line-height: 1.7em;
 }
 
+.nav li {
+  list-style: none;
+}
+
 h1 {
   font-size: 3em;
 }
