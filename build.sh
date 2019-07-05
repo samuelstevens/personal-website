@@ -12,13 +12,17 @@ shopt -s nullglob
 
 convert_md () {
   for md in ${input_dir}/**/*.md ${input_dir}/*.md; do
-    # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
+    if [[ $md != *README* ]]; then
 
-    dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
+      # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
 
-    mkdir -p $dirname
+      dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
 
-    pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+      mkdir -p $dirname
+
+      pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+    fi
+
   done
 }
 
