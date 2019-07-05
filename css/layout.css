@@ -7,7 +7,7 @@ main {
 section::before,
 section::after {
   display: table;
-  content: ' ';
+  content: " ";
   clear: both;
 }
 

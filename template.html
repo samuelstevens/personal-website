@@ -9,7 +9,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      <meta charset="utf-8"/>
+      <meta charset="utf-8" />
       <title>$title$</title>
     </head>
   </head>
@@ -19,15 +19,11 @@
         <aside class="column sidebar" style="margin-top: 35px;">
           <p><a href="/">Home</a></p>
           <p><a href="/resume.pdf">Resume</a></p>
+          <p><a href="/projects">Projects</a></p>
           <p><a href="/essays">Essays</a></p>
-          <p>Please email me at samuel.robert.stevens (at) gmail.com</p>
+          <p><a href="mailto:samuel.robert.stevens@gmail.com">Contact</a></p>
         </aside>
-        <article class="column content">
-          $body$
-          $for(article)$
-            <p><a href="/essays/$article.link$">$article.title$</a></p>
-          $endfor$
-        </article>
+        <article class="column content">$body$</article>
       </section>
     </main>
   </body>

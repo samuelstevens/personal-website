@@ -4,9 +4,8 @@ author:
 - Sam Stevens
 keywords: []
 abstract: Listing of all my essays
-article:
-- title: Learning From Others
-  link: learning-from-others
 ---
 
 # Essays
+
+[Learning from others](/essays/learning-from-others)

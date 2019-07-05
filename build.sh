@@ -8,9 +8,28 @@ root=~/Development
 input_dir=${root}/${input}
 output_dir=${root}/${output}
 
+shopt -s nullglob
+
 convert_md () {
-  # echo "$1" | sed -e "s/$input/$output/g" | sed 's/md/html/g' 
-  pandoc -s --template=template.html --ascii $1 > $(echo "$1" | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+  for md in ${input_dir}/**/*.md ${input_dir}/*.md; do
+    # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
+
+    dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
+
+    mkdir -p $dirname
+
+    pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+  done
+}
+
+convert_html () {
+  for html in ${input_dir}/**/*.html ${input_dir}/*.html; do
+    if [[ $html != *template* ]]; then
+
+      # echo $html | sed -e "s/$input/$output/g"
+      cp $html $(echo $html | sed -e "s/$input/$output/g")
+    fi
+  done
 }
 
 # minimizes the css files
@@ -19,13 +38,10 @@ for css_file in ${input_dir}/css/*.css; do
 done
 
 # gets the markdown and converts them to html
-for md in ${input_dir}/**/*.md; do
-  convert_md $md
-done
+convert_md
 
-for md in ${input_dir}/*.md; do
-  convert_md $md
-done
+# converts any custom html
+convert_html
 
 # copies my resume
 cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
