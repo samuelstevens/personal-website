@@ -1,6 +1,6 @@
-input=personal-website
-output=samuelstevens.github.io
-root=~/Development
+input=${1:-personal-website}
+output=${2:-samuelstevens.github.io}
+root=${3:-~/Development}
 input_dir=${root}/${input}
 output_dir=${root}/${output}
 

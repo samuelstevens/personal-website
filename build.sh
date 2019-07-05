@@ -2,9 +2,9 @@
 
 # nodemon --exec "./build.sh" . -e css,md,html
 
-input=personal-website
-output=samuelstevens.github.io
-root=~/Development
+input=${1:-personal-website}
+output=${2:-samuelstevens.github.io}
+root=${3:-~/Development}
 input_dir=${root}/${input}
 output_dir=${root}/${output}
 
@@ -32,16 +32,20 @@ convert_html () {
   done
 }
 
-# minimizes the css files
-for css_file in ${input_dir}/css/*.css; do
-  cat $css_file | tr -d '\n' | sed -E 's/[[:space:]]+/ /g' > ${output_dir}/css/$(basename $css_file)
-done
+build () {
+  # minimizes the css files
+  for css_file in ${input_dir}/css/*.css; do
+    cat $css_file | tr -d '\n' | sed -E 's/[[:space:]]+/ /g' > ${output_dir}/css/$(basename $css_file)
+  done
 
-# gets the markdown and converts them to html
-convert_md
+  # gets the markdown and converts them to html
+  convert_md
 
-# converts any custom html
-convert_html
+  # converts any custom html
+  convert_html
 
-# copies my resume
-cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
+  # copies my resume
+  cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
+}
+
+build
