@@ -10,6 +10,11 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <meta charset="utf-8" />
+      <meta name="description" content="$abstract$" />
+      <meta
+        name="keywords"
+        content="$for(keywords)$$keywords$$sep$, $endfor$"
+      />
       <title>$title$</title>
     </head>
   </head>
@@ -19,15 +24,24 @@
         <aside class="column sidebar" style="margin-top: 35px;">
           <ul class="nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/resume.pdf">Resume</a></li>
-            <li><a href="/projects">Projects</a></li>
             <li><a href="/essays">Essays</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/resume.pdf">Resume</a></li>
             <li>
               <a href="mailto:samuel.robert.stevens@gmail.com">Contact</a>
             </li>
           </ul>
         </aside>
-        <article class="column content">$body$</article>
+        <article class="column content">
+          $body$
+          <hr />
+          <p>Sam Stevens, 2019</p>
+          <p>
+            <a href="https://github.com/samuelstevens/personal-website"
+              >Source</a
+            >
+          </p>
+        </article>
       </section>
     </main>
   </body>

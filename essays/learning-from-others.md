@@ -2,11 +2,13 @@
 title:  Learning From Others
 author:
 - Sam Stevens
-keywords: [learning, TDD]
-abstract: How I learned to trust other's experiences and learn from then.
+keywords: [learning, TDD, essay]
+abstract: How I learned to trust other's experiences and learn from them.
 ---
 
 # Learning From Others
+
+June 2019
 
 Recently I started using test-driven development (TDD) for any project larger than a single file. The merits of TDD are widespread on the internet, so I only briefly repeat what you might already know: TDD (obviously) forces you to have at least some test written, often helps you write a wider range of test cases that cover more edge cases, and lets you trust your code to do what you expect. I want to talk about how long it took me to begin writing my code using TDD, considering that I’d first heard about it would’ve been sometime in high school.
 

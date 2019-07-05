@@ -2,8 +2,8 @@
 title: TicketBay
 author:
   - Sam Stevens
-keywords: [ticketbay, football, tickets, salty software]
-abstract:
+keywords: [ticketbay, football, tickets, salty software, react native, node.js]
+abstract: TicketBay is a mobile application I developed.
 ---
 
 # TicketBay

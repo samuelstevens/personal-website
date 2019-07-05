@@ -2,8 +2,8 @@
 title:  Projects
 author:
 - Sam Stevens
-keywords: [projects]
-abstract:
+keywords: [projects, experience, blog]
+abstract: A list of some projects that I work(ed) on.
 ---
 
 # Projects and Experiences

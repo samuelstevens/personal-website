@@ -3,7 +3,7 @@ title: HealthyAgers
 author:
   - Sam Stevens
 keywords: [fullstack, healthyagers, ohio state university, ruchika prakash, mindfulness]
-abstract:
+abstract: HealthyAgers is a fullstack application I developed.
 ---
 
 # HealthyAgers

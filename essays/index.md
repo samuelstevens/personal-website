@@ -2,10 +2,10 @@
 title:  Essays
 author:
 - Sam Stevens
-keywords: []
-abstract: Listing of all my essays
+keywords: [writing, blog]
+abstract: A couple interesting essays I've written.
 ---
 
 # Essays
 
-[Learning from others](/essays/learning-from-others)
+[Learning From Others](/essays/learning-from-others)
