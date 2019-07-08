@@ -77,3 +77,9 @@ li {
   text-decoration: underline;
   color: #4e44a2;
 }
+
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}

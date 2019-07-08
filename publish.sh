@@ -12,4 +12,8 @@ publish () {
   git push
 }
 
+./build.sh
+
+python3 essays.py
+
 (cd $output_dir && publish $commit_message)

@@ -3,7 +3,7 @@ title:  Projects
 author:
 - Sam Stevens
 keywords: [projects, experience, blog]
-abstract: A list of some projects that I work(ed) on.
+abstract: I work(ed) on many projects. These are the big ones that are the most finished.
 ---
 
 # Projects and Experiences

@@ -22,7 +22,6 @@ convert_md () {
 
       pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
     fi
-
   done
 }
 
