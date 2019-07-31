@@ -4,7 +4,7 @@ import sqlite3
 import datetime
 import os
 
-TAGS = ['blog', 'essays']
+TAGS = ['blog', 'essays', 'essay']
 
 def get_db_string():
     HOME = os.getenv('HOME', '')
@@ -91,7 +91,7 @@ def get_essays():
         ORDER BY
             zcreationdate DESC
         '''):
-        if any(tag in row['text'] for tag in hashtags) and '#todo' not in row['text']:
+        if any(tag in row['text'] for tag in hashtags) and '#todo' not in row['text'] and '#draft' not in row['text']:
             essays.append(make_post(*row))
 
     con.close()
