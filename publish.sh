@@ -16,4 +16,6 @@ publish () {
 
 python3 essays.py
 
-(cd $output_dir && publish $commit_message)
+cd $output_dir
+publish $commit_message
+
