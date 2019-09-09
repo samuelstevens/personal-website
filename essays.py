@@ -44,7 +44,7 @@ def make_post(title, text, creation_date):
     date = datetime.datetime.fromtimestamp(dt_conv(creation_date))
     date_string = date.strftime('%B %Y')
 
-    file_name = '-'.join(title.lower().split(' ')).replace("'", "")
+    file_name = '-'.join(title.lower().split(' ')).replace("'", "").replace('"', "")
     file_extension = 'md'
 
     text = make_metadata(title) + '\n\n'.join([p for p in text.split('\n') if valid_p(p)])
