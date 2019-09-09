@@ -10,7 +10,7 @@ abstract:
 
 We're entering our second year of [TicketBay](https://ticketbay.io) being live, and I now see the value of having formal roles within a startup.
 
-It makes sure your team members each have an area of responsibility. This is critical to making sure that team members can specialize and be an expert in their domain. By making sure that each member has a focus, you can simply do more than if everyone does a bit of everything. 
+It ensures that your team members each have an area of responsibility. This is critical to making sure that team members can specialize and be an expert in their domain. By making sure that each member has a focus, you can simply do more than if everyone does a bit of everything. 
 
 There's an ongoing debate in the TicketBay team about having everyone do a bit of everything so that we can all learn. I think that everyone can try stuff out and see what they like. I also don't think everyone needs to know the breaking changes from Expo SDK 33 to SDK 34, but at least one person definitely needs to know. 
 
