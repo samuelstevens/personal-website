@@ -17,7 +17,6 @@ convert_md () {
       # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
 
       dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
-
       mkdir -p $dirname
 
       pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
