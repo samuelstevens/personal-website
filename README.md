@@ -20,3 +20,10 @@ All scripts are based on my personal file structures.
 - [] Add Google SEO, robots.txt, etc.
 - [] Convert python script to bash, or bash to python
 - [] Preprocess HTML by removing excess whitespace
+
+## Images
+
+1. Open in Gimp
+2. `Flatten Image`
+3. Convert to indexed mode, `Generate optimum palette` with 256 colors.
+4. Save as `.png` with maximum compression.

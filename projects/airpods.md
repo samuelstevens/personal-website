@@ -16,6 +16,16 @@ I'd like to eventually publish this on the App Store, but I also needed to get t
 
 ## [Download Here](/Airpods.dmg)
 
+## Pictures
+
+![](/images/airpods-spotlight-compressed.png)
+
+_Airpods in Spotlight Search_
+
+![](/images/airpods-notification.png)
+
+_The notification that shows up_
+
 ## Code
 
 I added a simple `print` option to BluetoothConnector so that I could use an image of Airpods for the notifications, but other than that, just used the default BluetoothConnnector commands and packaged the binary with my .app/.dmg so that it has no external dependencies.

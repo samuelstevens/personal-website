@@ -46,6 +46,10 @@ build () {
   # converts any custom html
   convert_html
 
+  # copies images
+  mkdir -p $output_dir/images
+  cp $input_dir/images/* $output_dir/images
+
   # copies my resume
   cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
 
