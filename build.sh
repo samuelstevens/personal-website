@@ -27,10 +27,15 @@ convert_md () {
 convert_html () {
   for html in ${input_dir}/**/*.html ${input_dir}/*.html; do
     if [[ $html != *template* ]]; then
-
       # echo $html | sed -e "s/$input/$output/g"
       cp $html $(echo $html | sed -e "s/$input/$output/g")
     fi
+  done
+}
+
+copy_js () {
+  for js in ${input_dir}/**/*.js; do
+    cp $js $(echo $js | sed -e "s/$input/$output/g")
   done
 }
 
@@ -45,6 +50,9 @@ build () {
 
   # converts any custom html
   convert_html
+
+  # copies js
+  copy_js
 
   # copies images
   mkdir -p $output_dir/images

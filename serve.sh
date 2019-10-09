@@ -10,4 +10,4 @@ sleep 1
 
 open $(pbpaste)
 
-nodemon . -e css,md,html --exec "./build.sh $input $output $root "
+nodemon . -e js,sh,css,md,html --exec "./build.sh $input $output $root "
