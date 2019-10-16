@@ -1,5 +1,3 @@
-
-
 import sqlite3
 import datetime
 import os
@@ -21,7 +19,7 @@ def valid_p(p):
     hashtags = [ '#' + tag for tag in TAGS ]
     return (not any(tag in p for tag in hashtags)) and p != ''
 
-def make_metadata(title, keywords = [], abstract = ''):
+def make_metadata(title, keywords = [], abstract = '', date=''):
     # ---
     # title: HealthyAgers
     # author:
@@ -42,12 +40,12 @@ abstract: {abstract}
 
 def make_post(title, text, creation_date):
     date = datetime.datetime.fromtimestamp(dt_conv(creation_date))
-    date_string = date.strftime('%B %Y')
+    date_string = date.strftime('%m/%y')
 
-    file_name = '-'.join(title.lower().split(' ')).replace("'", "").replace('"', "")
+    file_name = '-'.join(title.lower().split(' ')).replace("'", '').replace('"', '')
     file_extension = 'md'
 
-    text = make_metadata(title) + '\n\n'.join([p for p in text.split('\n') if valid_p(p)])
+    text = make_metadata(title, date=date_string) + '\n\n'.join([p for p in text.split('\n') if valid_p(p)])
 
     text = text.replace('->', '→')
 
@@ -56,14 +54,12 @@ def make_post(title, text, creation_date):
     with open(path, 'w') as f:
         f.write(text)
 
-    return (title, file_name)
+    return (title, file_name, date_string)
 
 def write_index_file(essays):
 
-    def link_to_md(title, link):
-        return f'[{title}](/essays/{link})'
-
-    print()
+    def link_to_md(title, link, date):
+        return f'{date}: [{title}](/essays/{link})'
 
     text = make_metadata('Essays', ['writing', 'blog'], 'A couple essays I\'ve written.') + '# Essays' + '\n\n' + '\n\n'.join([link_to_md(*e) for e in essays])
 

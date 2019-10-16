@@ -8,10 +8,10 @@ abstract: A couple essays I've written.
 ---
 # Essays
 
-[Hardest Bug I've Ever Dealt With](/essays/hardest-bug-ive-ever-dealt-with)
+08/19: [Hardest Bug I've Ever Dealt With](/essays/hardest-bug-ive-ever-dealt-with)
 
-[Thoughts on Startup Roles](/essays/thoughts-on-startup-roles)
+08/19: [Thoughts on Startup Roles](/essays/thoughts-on-startup-roles)
 
-[Design](/essays/design)
+07/19: [Design](/essays/design)
 
-[Focus](/essays/focus)
+07/19: [Focus](/essays/focus)

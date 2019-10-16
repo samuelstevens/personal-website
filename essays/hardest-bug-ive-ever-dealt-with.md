@@ -8,8 +8,6 @@ abstract:
 ---
 # Hardest Bug I've Ever Dealt With
 
-**You want your writing to communicate with maximum effectiveness to its reader, not reveal the exact route you took to reach your conclusions.**
-
 The Hardest Bug I’ve Ever Dealt With™ was actually not a bug in the sense of code not doing what I wanted. It was *email* not doing what I wanted, and then the challenges that came with bending the code to meet the email standards. 
 
 For [TicketBay](https://salty.software/ticketbay), we sent confirmation emails to new users so that only Ohio State students could use the app. These emails included a link with a big hash as a query param so that we could be sure it was unique, only they could click on it, and we could be sure it was their account. Pretty standard stuff, I’m sure everyone has gotten dozens of these emails.
