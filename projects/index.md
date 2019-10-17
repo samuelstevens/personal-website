@@ -23,3 +23,7 @@ A macOS app I published to connect/disconnect from your Airpods quickly.
 ## [ubscrape](/projects/ubscrape)
 
 An Urban Dictionary scraper I built, aimed at NLP research.
+
+## [this website](/todo)
+
+This website is a small project that I continually update as I learn more about web development.

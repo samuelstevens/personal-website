@@ -7,6 +7,12 @@ html {
 	box-sizing: inherit;
 }
 
+:root {
+  --primary: #ffc871;
+  --shadow: #4e44a2;
+  --secondary: #fff771;
+}
+
 h1,
 h2,
 h3,
@@ -25,17 +31,17 @@ li {
 
 a {
 	text-decoration: none;
-	color: #4e44a2;
+	color: var(--shadow);
 }
 
 a:hover {
-	color: #ffc871;
+	color: var(--primary);
 }
 
 h1 {
 	font-size: 3em;
-	background: #ffc871;
-	box-shadow: 10px 10px 0 #4e44a2;
+	background: var(--primary);
+	box-shadow: 10px 10px 0 var(--shadow);
 	padding-left: 10px;
 	margin-left: 0px;
 	margin-right: 10px;
@@ -63,8 +69,8 @@ li > p {
 }
 
 .nav {
-	background: #fff771;
-	box-shadow: 10px 10px 0 #4e44a2;
+	background: var(--secondary);
+	box-shadow: 10px 10px 0 var(--shadow);
 	margin-right: 35px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -79,7 +85,7 @@ li > p {
 
 .nav li a:hover {
 	text-decoration: underline;
-	color: #4e44a2;
+	color: var(--shadow);
 }
 
 blockquote {
