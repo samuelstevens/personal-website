@@ -18,7 +18,7 @@ Except nearly *all of our emails went to junk or spam*. And we could not figure 
 
 Eventually I started looking for why email clients would mark emails as spam, and `a` tags (links) were one of the reasons. So I removed all the links from the email, **including the all-important confirmation link**. Still went to spam. Removed the image which was hosted at [salty.software](https://salty.software)
 
-**DID NOT GO TO SPAM!**
+**Did not go to spam.**
 
 That completed finding the cause of the bug. I had sent myself hundreds of emails over 4 hours, and despite the fact that I basically deleted every email as soon as it delivered to my inbox, I could still send an automated email to myself with no links and it would not go to spam. 
 

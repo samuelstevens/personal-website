@@ -6,7 +6,7 @@ keywords: [projects, experience, blog]
 abstract: I work(ed) on many projects. These are the big ones that are the most finished.
 ---
 
-# Projects and Experiences
+# Projects
 
 ## [TicketBay](/projects/ticketbay)
 

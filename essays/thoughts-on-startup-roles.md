@@ -18,7 +18,7 @@ Again, I don't want to say that only the technical leader can write code. That's
 
 As an example, there will be someone in charge of technical work (actually creating the product, maintaining, etc). He/she also will need help, and if there are other capable team members, it's his/her responsibility to ask for help and not fall behind deadlines. 
 
-*Note: you could replace technical in the paragraph above with any adjective describing work your team does and it is still valid.*
+> Note: you could replace technical in the paragraph above with any adjective describing work your team does and it is still valid.
 
 This separation of areas of responsibility ensures that *one* person needs to worry about the long term goals for *one* thing.
 
