@@ -40,7 +40,7 @@ abstract: {abstract}
 
 def make_post(title, text, creation_date):
     date = datetime.datetime.fromtimestamp(dt_conv(creation_date))
-    date_string = date.strftime('%m/%y')
+    date_string = date.strftime('%d/%m/%Y')
 
     file_name = '-'.join(title.lower().split(' ')).replace("'", '').replace('"', '')
     file_extension = 'md'

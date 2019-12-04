@@ -8,14 +8,14 @@ abstract: A couple essays I've written.
 ---
 # Essays
 
-12/19: [The Importance of Planning](/essays/the-importance-of-planning)
+03/12/2019: [The Importance of Planning](/essays/the-importance-of-planning)
 
-11/19: [Programming Languages](/essays/programming-languages)
+20/11/2019: [Programming Languages](/essays/programming-languages)
 
-08/19: [Hardest Bug I've Ever Dealt With](/essays/hardest-bug-ive-ever-dealt-with)
+28/08/2019: [Hardest Bug I've Ever Dealt With](/essays/hardest-bug-ive-ever-dealt-with)
 
-08/19: [Thoughts on Startup Roles](/essays/thoughts-on-startup-roles)
+01/08/2019: [Thoughts on Startup Roles](/essays/thoughts-on-startup-roles)
 
-07/19: [Design](/essays/design)
+20/07/2019: [Design](/essays/design)
 
-07/19: [Focus](/essays/focus)
+07/07/2019: [Focus](/essays/focus)
