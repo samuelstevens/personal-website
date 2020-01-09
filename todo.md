@@ -12,10 +12,8 @@ This page is both a document for me to keep track of what I want to add/edit/fix
 
 ## Future Work
 
-- Convert CSS variables to literals for browser compatibility
 - Allow users to add/remove CSS
 - Allow users to load images instead of having them automatically loaded (potentially awful for low bandwith users, see Dan Luu's post [here](https://danluu.com/))
-- Create a page documenting my python code to calculate a relation between class being a waste of time and professor quality.
 
 ## Past Work
 

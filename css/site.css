@@ -17,13 +17,16 @@ main {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   font-family: Athelas, serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.6em;
 }
 
+
+
 a {
-	color: #91710a;
+  color: #91710a; 
 }
-a:visited {
-	color: #4f4f4f;
+
+hr {
+  border-width: 0.5px;
 }

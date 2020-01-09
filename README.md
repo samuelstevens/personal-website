@@ -3,7 +3,7 @@
 This is the repo I'm using to set up my website, and then [this repo](https://github.com/samuelstevens/samuelstevens.github.io) is the one that GitHub publishes (I know I need to use Netifly).
 
 ```bash
-python3 essays.py # rips files from Bear's SQLite databse and puts them in /essays
+python3 writing.py # rips files from Bear's SQLite databse and puts them in /writing
 
 ./build.sh # builds the website
 

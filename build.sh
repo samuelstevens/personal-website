@@ -41,6 +41,7 @@ copy_js () {
 
 build () {
   # minimizes the css files
+  mkdir -p $output_dir/css
   for css_file in ${input_dir}/css/*.css; do
     cat $css_file | tr -d '\n' | sed -E 's/[[:space:]]+/ /g' > ${output_dir}/css/$(basename $css_file)
   done
@@ -52,11 +53,12 @@ build () {
   convert_html
 
   # copies js
+  mkdir -p $output_dir/js
   copy_js
 
   # copies images
   mkdir -p $output_dir/images
-  cp $input_dir/images/* $output_dir/images
+  cp -r $input_dir/images/* $output_dir/images
 
   # copies my resume
   cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
