@@ -12,7 +12,7 @@ I'm a third year undergrad at THE Ohio State University, where I study Computer 
 
 I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30). 
 
-I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in Dresden, Germany, and will be interning at Microsoft in Seattle this summer (2020). 
+I've been lucky to intern at GE Aviation (twice!) in Cincinnati and study abroad in Dresden, Germany. I will be interning at Microsoft in Seattle this summer (2020). 
 
 # Previous Projects
 
