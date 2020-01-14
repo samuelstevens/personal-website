@@ -19,7 +19,7 @@ convert_md () {
       dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
       mkdir -p $dirname
 
-      pandoc -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+      pandoc --from markdown+backtick_code_blocks --to html5 -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
     fi
   done
 }

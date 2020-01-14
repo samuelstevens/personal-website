@@ -1,11 +1,11 @@
-
 ---
 title: Thoughts on Startup Roles
 author:
     - Sam Stevens
-keywords: []
-abstract: 
+keywords: [startup, roles, technical role, domain expert, productivity, ]
+abstract: How roles in a startup affect your efficiency.
 ---
+
 # Thoughts on Startup Roles
 
 We're entering our second year of [TicketBay](https://ticketbay.io) being live, and I now see the value of having formal roles within a startup.
@@ -25,3 +25,5 @@ This separation of areas of responsibility ensures that *one* person needs to wo
 Without roles, everyone is involved in everything. This is great for learning, but it's been my experience that things get messy fast and stuff doesn't get done, because not everyone knows what their job is. 
 
 So the moral of the story is assign areas of responsibility, not necessarily areas of work. This makes the team more productive. 
+
+Please [email me](mailto:samuel.robert.stevens@gmail.com) if you have any comments or want to discuss further.

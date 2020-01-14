@@ -14,7 +14,7 @@ publish () {
 }
 
 
-python3 writing.py
+# python3 writing.py
 
 ./build.sh
 

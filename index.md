@@ -2,13 +2,13 @@
 title: Sam Stevens
 author:
   - Sam Stevens
-keywords: []
-abstract:
+keywords: [sam stevens, samuel stevens, samuelstevens.me]
+abstract: About me! My name is Sam Stevens, and I'm a third year undergrad at THE Ohio State University.
 ---
 
 # About Me
 
-I'm a third year undergrad at THE Ohio State University, where I study Computer Science and minor in German. 
+My name is Sam Stevens. I'm a third year undergrad at THE Ohio State University, where I study Computer Science and minor in German. 
 
 I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30). 
 

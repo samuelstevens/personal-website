@@ -8,6 +8,10 @@ img {
 	height: auto;
 }
 
+figcaption {
+  text-align: center;
+}
+
 main {
   margin: 0 auto;
   padding: 1.5em;
@@ -17,11 +21,13 @@ main {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   font-family: Athelas, serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6em;
 }
 
-
+pre {
+  line-height: 1;
+}
 
 a {
   color: #91710a; 

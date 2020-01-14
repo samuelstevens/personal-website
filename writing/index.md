@@ -1,21 +1,27 @@
-
 ---
 title: Writing
 author:
     - Sam Stevens
-keywords: ['writing', 'blog']
-abstract: A couple essays I've written.
+keywords: ['writing', 'blog', 'essays']
+abstract: A collection of my writing/blogging about programming, life and startups.
 ---
+
 # Writing
 
-03/12/2019: [The Importance of Planning](/writing/the-importance-of-planning)
+01/14/2020: [Guide: Optimizing Python Code with `ctypes`](/writing/optimizing-python-code-with-ctypes)
 
-20/11/2019: [Programming Languages](/writing/programming-languages)
+<!-- 01/14/2020: [Profiling Python Code with `cProfile`](/writing/profiling-python-code-with-cprofile) -->
 
-28/08/2019: [Hardest Bug I've Ever Dealt With](/writing/hardest-bug-ive-ever-dealt-with)
+01/11/2020: [Abstractions and Types](/writing/abstractions-and-types)
 
-01/08/2019: [Thoughts on Startup Roles](/writing/thoughts-on-startup-roles)
+12/03/2019: [The Importance of Planning](/writing/the-importance-of-planning)
 
-20/07/2019: [Design](/writing/design)
+11/20/2019: [Programming Languages](/writing/programming-languages)
+
+08/28/2019: [Hardest Bug I've Ever Dealt With](/writing/hardest-bug-ive-ever-dealt-with)
+
+08/01/2019: [Thoughts on Startup Roles](/writing/thoughts-on-startup-roles)
+
+07/20/2019: [Design](/writing/design)
 
 07/07/2019: [Focus](/writing/focus)

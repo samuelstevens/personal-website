@@ -43,7 +43,7 @@ abstract: {abstract}
 
 def make_post(title, text, creation_date, group):
     date = datetime.datetime.fromtimestamp(dt_conv(creation_date))
-    date_string = date.strftime('%d/%m/%Y')
+    date_string = date.strftime('%m/%d/%Y')
 
     file_name = '-'.join(title.lower().split(' ')).replace("'", '').replace('"', '')
     file_extension = 'md'
@@ -51,6 +51,9 @@ def make_post(title, text, creation_date, group):
     text = make_metadata(title=title, date=date_string) + '\n\n'.join([p for p in text.split('\n') if valid_p(p)])
 
     text = text.replace('->', '→')
+    text = text.encode('ascii', errors='ignore').decode('ascii', errors='ignore')
+
+    text += '\n\nPlease [email me](mailto:samuel.robert.stevens@gmail.com) if you have any comments or want to discuss further.'
 
     path = os.path.join(group, f'{file_name}.{file_extension}')
 

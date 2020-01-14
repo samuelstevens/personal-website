@@ -1,11 +1,11 @@
-
 ---
 title: Design
 author:
     - Sam Stevens
-keywords: []
-abstract: 
+keywords: [design, visual design, ui, ux, minimalism, colors, colo scheme]
+abstract: How to make a program that isn't pretty, but not ugly either.
 ---
+
 # Design
 
 I'm a CSE student, so I program as a hobby. I like to think I'm good at writing code, deploying applications, fixing errors, and visual design. 
@@ -34,11 +34,11 @@ Nine out of ten times, removing elements or colors improves my design. Everythin
 
 > Good design is as little design as possible.
 
-— Dieter Rams
+ Dieter Rams
 
 > I remove all the elements of a design that I can without hurting the functionality. Then I remove some more.
 
-— Hectóre Blivand
+ Hectre Blivand
 
 So, I always start with minimalism in my mind. No colors, no shadows, no icons, etc. 
 
@@ -69,3 +69,5 @@ More than anything, feedback from other people, users, and real designers will h
 ## Footnotes
 
 [1] [The Inmates are Running the Asylum](https://www.amazon.com/Inmates-Are-Running-Asylum-Products/dp/0672326140) by Alan Cooper explains interaction design very well, and is an excellent book.
+
+Please [email me](mailto:samuel.robert.stevens@gmail.com) if you have any comments or want to discuss further.
