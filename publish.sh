@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 input=${1:-personal-website}
 output=${2:-samuelstevens.github.io}
 root=${3:-~/Development}
@@ -16,7 +18,13 @@ publish () {
 
 # python3 writing.py
 
+
+# for writing in ${input_dir}/writing/*.md; do
+#   aspell check $writing
+# done
+
 ./build.sh
+
 
 cd $output_dir
 publish $commit_message

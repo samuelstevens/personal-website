@@ -18,11 +18,11 @@ I'd like to eventually publish this on the App Store, but I also needed to get t
 
 ## Pictures
 
-![](/images/airpods-spotlight-compressed.png)
+![](/images/airpods/spotlight-compressed.png)
 
 _Airpods in Spotlight Search_
 
-![](/images/airpods-notification.png)
+![](/images/airpods/notification-compressed.png)
 
 _The notification that shows up_
 

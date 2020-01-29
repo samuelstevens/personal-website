@@ -2,7 +2,7 @@
 title: Design
 author:
     - Sam Stevens
-keywords: [design, visual design, ui, ux, minimalism, colors, colo scheme]
+keywords: [design, visual design, ui, ux, minimalism, colors, color scheme]
 abstract: How to make a program that isn't pretty, but not ugly either.
 ---
 
