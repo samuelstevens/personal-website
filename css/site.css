@@ -24,10 +24,30 @@ main {
   text-rendering: optimizeLegibility;
 
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  
+  
+
   font-family: Athelas, serif;
   font-size: 1.2em;
   line-height: 1.6em;
+}
+
+*::selection {  
+  background-color: #fff9c4;
+  color: black;
+}
+
+*::-moz-selection {
+  background-color: #fff9c4;
+  color: black;
+}
+
+main.arxiv-document {
+  padding: 4px;
+
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 pre {

@@ -168,7 +168,7 @@ More notes:
 * `lcs.c` has a function `lcs()` with the signature: `struct Sequence *lcs(struct Sequence *s1, struct Sequence *s2)`. To get the return type set up, I use `lcsmodule.lcs.restype = ctypes.POINTER(SEQUENCE)`.
 * To make a call with the reference to the `struct Sequence`, I use `ctypes.byref()` which returns a "light-weight pointer" to your object (faster than `ctypes.POINTER()`).
 * `common.items` is a list of bytes, so they are decoded to get `ret` to be a list of `str`. 
-* `lcsmodule.freeSequence(common)` simply frees the memory associated with `common`. This is **critical**, because it will not be collect by the garbage collector (AFAIK).
+* `lcsmodule.freeSequence(common)` simply frees the memory associated with `common`. This is **critical**, because it will not be automatically collected by the garbage collector (AFAIK).
 
 Optimized Python code: code that you wrote in C and wrote a wrapper for in Python.
 
