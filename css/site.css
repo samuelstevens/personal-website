@@ -61,3 +61,9 @@ a {
 hr {
   border-width: 0.5px;
 }
+
+.sandwich-pic {
+  display: block;
+  max-width: 50%;
+  margin: auto;
+}
