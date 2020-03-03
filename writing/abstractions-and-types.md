@@ -14,13 +14,13 @@ Functions are the easiest example of an abstraction. Not all abstractions are go
 
 In addition to functions, types are an abstraction. Your variables don't always have to be `int`, even if that's what they're represented as. For example, `time_t` is often just an `int`, but functions like `time()` return `time_t`, **not** `int`.
 
-Historically (as far as I understand), types were important so the computer knew how much space to allocate for a variable. C and its derivatives (I'm not very familiar with languages before C) are statically typed (not strongly typed). We were squeezing performance out of the machine, and allocating 8 bytes to every variable so that it could be a double if it felt like it was not the way to do it.
+Historically (as far as I understand), types were important so the computer knew how much space to allocate for a variable. C and its derivatives (I'm not very familiar with languages before C) are statically typed (not strongly typed). 
 
-Then dynamically typed languages that were aimed at lower performance scripting and a higher rate of development came about (like Python and Ruby). Dynamically typed languages let you assign variables to different types because the variables are all reference types (so the computer only needs space for a memory address). You didn't need to worry about types, you could just *code* as fast as you wanted and make things just work.
+Then dynamically typed languages that were aimed at lower performance and a higher rate of development came about (like Python and Ruby). Dynamically typed languages let you assign variables to different types because the variables are all reference types (so the computer only needs space for a memory address). You didn't need to worry about types, you could just *code* as fast as you wanted and make things work consistently later on.
 
 If you build a moderately large codebase in one of these languages, you might notice that things start to get hard pretty quickly. The lack of types can lead to many runtime errors. Now we have TypeScript and Python type annotations, so we can do some static type checking before running our programs to eliminate runtime errors just like you would with Java.
 
-But even with static type checking (which I mostly use when I make changes to a function signature), types are *very useful*. 
+But even if you don't use static type checking (which I mostly use when I make changes to a function signature), types are *very useful*. 
 
 Types are more for developers than the computer (following the trend of developer time being more valuable than computer time), and I want to explain one significant instance where this is true.
 

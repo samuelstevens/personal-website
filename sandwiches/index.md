@@ -1,14 +1,26 @@
 ---
-title: 100 Sandwiches
+title: 100 Sam-wiches
 ---
 
-# 100 Days of Sandwiches
+# 100 Days of Sam-wiches
 
-I'm going to make a sandwich every day, for 100 days. I'm gonna be really good at making sandwiches.
+I'm going to make a sandwich every day, for 100 days. I'm going to be *really* good at making sandwiches.
 
 ## Sandwiches
 
-[Ham, cheese and onion](/sandwiches/day-1)
+1. [Ham, cheese and onion](/sandwiches/day-1)
+2. [Ham, cheddar and mustard mayo](/sandwiches/day-2)
+3. [Turkey, ham, havarti and spicy mayo](/sandwiches/day-3)
+4. [Ham, salami, havarti, spicy mayo and pickled pepper spread](/sandwiches/day-4)
+5. [Salami, habanero pepperjack and sweet relish press](/sandwiches/day-5)
+6. [Salami, turkey, habanero pepperjack and pickled peppers](/sandwiches/day-6)
+7. [Ham, turkey, habanero pepperjack, spicy mustard and sweet relish on a bagel](/sandwiches/day-7)
+8. [Shaved beef and banana peppers on sourdough](/sandwiches/day-8)
+9. [A bunch of stuff.](/sandwiches/day-9)
+10. [Onions, Munster and ham on a bagel](/sandwiches/day-10)
+11. [Hot dog on a bagel](/sandwiches/day-11)
+12. [Three cheese melt with onions and peppers](/sandwiches/day-12)
+13. [Double ham and cheese with onions](/sandwiches/day-13)
 
 ## Notes
 

@@ -64,6 +64,7 @@ hr {
 
 .sandwich-pic {
   display: block;
-  max-width: 50%;
+  width: 440px;
+  max-width: 100%;
   margin: auto;
 }
