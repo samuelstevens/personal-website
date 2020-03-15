@@ -48,7 +48,7 @@ In addition to helping with type errors, TypeScript is amazingly well-integrated
 
 If you use VS Code already with JavaScript, give TypeScript a shot. It's amazing how much of the code just falls in place without me reading any API docs. 
 
-Anytime I start a project in JavaScript that's non trivial, I always start in TypeScript. It's just that good. 
+Anytime I start a project in JavaScript that's non-trivial, I always start in TypeScript. It's just that good. 
 
 ## 3. Python 3
 

@@ -8,6 +8,8 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
+03/15/2020 [Pseudo-elements in CSS](/writing/pseudo-elements)
+
 01/29/2020 [iOS 13's Music App Sucks](/writing/ios-13s-music-app-sucks)
 
 01/14/2020: [Guide: Optimizing Python Code with `ctypes`](/writing/optimizing-python-code-with-ctypes)

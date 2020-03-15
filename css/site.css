@@ -1,3 +1,8 @@
+:root {
+  --highlight-color: #fff9c4;
+  --secondary-color: #91710a;
+}
+
 blockquote {
 	font-style: italic;
   margin-left: 1em;
@@ -26,7 +31,6 @@ main {
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  
 
   font-family: Athelas, serif;
   font-size: 1.2em;
@@ -34,12 +38,12 @@ main {
 }
 
 *::selection {  
-  background-color: #fff9c4;
+  background-color: var(--highlight-color);
   color: black;
 }
 
 *::-moz-selection {
-  background-color: #fff9c4;
+  background-color: var(--highlight-color);
   color: black;
 }
 
@@ -55,7 +59,7 @@ pre {
 }
 
 a {
-  color: #91710a; 
+  color: var(--secondary-color); 
 }
 
 hr {
