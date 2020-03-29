@@ -8,6 +8,10 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
+03/29/3030 [CTF 2020 Reflection](/writing/ctf-2020)
+
+03/25/2020 [Jupyter Notebooks for Engineering Classes](/writing/jupyter-for-hw)
+
 03/15/2020 [Pseudo-elements in CSS](/writing/pseudo-elements)
 
 01/29/2020 [iOS 13's Music App Sucks](/writing/ios-13s-music-app-sucks)

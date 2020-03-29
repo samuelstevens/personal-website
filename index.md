@@ -14,6 +14,8 @@ I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](ht
 
 I've been lucky to intern at GE Aviation (twice!) in Cincinnati and study abroad in Dresden, Germany. I will be interning at Microsoft in Seattle this summer (2020). 
 
+I (maybe obviously) like [programming](https://github.com/samuelstevens), and cooking (specifically [sandwiches](/sandwiches))
+
 # Previous Projects
 
 [TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets.
