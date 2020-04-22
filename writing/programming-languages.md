@@ -2,11 +2,21 @@
 title: Programming Languages
 author:
     - Sam Stevens
-keywords: [languages, programming languages, go, typescript, python, javascript, java, lisp, haskell, c, elm, erlang]
+keywords: [languages, programming languages, go, typescript, python, javascript, java, lisp, haskell, c, elm, erlang, rust]
 abstract: Why I can't decide whether to learn more languages.
 ---
 
 # Programming Languages
+
+**Update April 21, 2020**
+
+I've worked a lot with Python.
+
+**Update Januuary 21, 2020**
+
+Added Rust.
+
+**Original Post**
 
 Alternatively, *am I a [Blub](http://www.paulgraham.com/avg.html) programmer*?
 
@@ -22,17 +32,17 @@ Why is this useful? The next time I tell myself that I'm going to learn a langua
 
 When learning a new language, where does it fit? If it's above everything else in *your* list, it's probably worth learning. 
 
-1. Go - strongly typed, garbage collector, cooler than Java, minimal syntax to learn
+1. [Go](#go) - strongly typed, garbage collector, cooler than Java, minimal syntax to learn
 
-2. TypeScript - strongly typed, works for web apps, easy to pick up if you understand JavaScript
+2. [Python](#python) - ubiquitous, powerful, strong ecosystem
 
-3. Python - ubiquitous, powerful, strong ecosystem
+3. [TypeScript](#typescript) - strongly typed, works for web apps, easy to pick up if you understand JavaScript
 
-4. JavaScript - amazing package options, enormous ecosystem, functional programming concepts. 
+4. [C](#c) - have to think about every line forces efficient code  
 
-5. C - have to think about every line forces efficient code  
+5. [JavaScript](#javascript) - amazing package options, enormous ecosystem, functional programming concepts. 
 
-6. Java - it works everywhere.
+6. [Java](#java) - it works everywhere.
 
 ## 1. Go
 
@@ -40,17 +50,7 @@ When learning a new language, where does it fit? If it's above everything else i
 
 It's missing native GUI support, and the packages for making a web app are limited, but for building an API server, or a CLI, it is really powerful and easy to write. I like Go, and am excited to continue writing in it.
 
-## 2. TypeScript
-
-[TypeScript](https://www.typescriptlang.org/) is a typed superset of JavaScript that compiles to plain JavaScript. Basically, you add types to JavaScript so everyone knows whats going on, and so you remove `"TypeError: Cannot read property 'greeting' of undefined"` errors right off the bat. 
-
-In addition to helping with type errors, TypeScript is amazingly well-integrated with [VS Code](https://code.visualstudio.com/), which is a text editor built on Electron that manages to perform well and provide pseudo-IDE features that never feel overbearing. 
-
-If you use VS Code already with JavaScript, give TypeScript a shot. It's amazing how much of the code just falls in place without me reading any API docs. 
-
-Anytime I start a project in JavaScript that's non-trivial, I always start in TypeScript. It's just that good. 
-
-## 3. Python 3
+## 2. Python 3
 
 Python is so useful for scripts. So so useful. And then the script has a bigger use case, and you start writing some error handling code, and your old script is now an automated piece in production, and it's OK, because it's Python, and you have `pylint` and `mypy` and virtual environments. Treat Python right, and it will amazingly useful. The only issue is when you don't treat Python right. 
 
@@ -64,15 +64,38 @@ What does treating Python right look like?
 
 4. Using `pylint` on your code. Yes, `pylint` complains about stuff like documentation and unused variables and unnecessary imports. Wait until you've finished the logic and the testing to check pylint. Commit the code before you fix the errors, in case something breaks. But when you defeat pylint, your code is readable and documented. Amazing stuff.
 
-## 4. JavaScript
+**Update April 21, 2020**
+
+I've used almost exclusively Python in the last 4 months, and learned a lot. Type annotations are pretty good, especially when you use `mypy --strict`. But there are still some things that slip through:
+
+* `@functools.lru_cache()` turns your function into `Any -> Any`, which invalidates existing type annotations.
+* Adding type annotations to code you don't own can be difficult; I don't want to have to create type stubs for `tqdm` and `numpy`.
+
+It still seems more useful that TypeScript though, because of Jupyter Notebooks. Granted, a lot of my work is exploratory, data-science stuff that takes advantage of the large Python ecosystem.
+
+## 3. TypeScript
+
+[TypeScript](https://www.typescriptlang.org/) is a typed superset of JavaScript that compiles to plain JavaScript. Basically, you add types to JavaScript so everyone knows whats going on, and so you remove `"TypeError: Cannot read property 'greeting' of undefined"` errors right off the bat. 
+
+In addition to helping with type errors, TypeScript is amazingly well-integrated with [VS Code](https://code.visualstudio.com/), which is a text editor built on Electron that manages to perform well and provide pseudo-IDE features that never feel overbearing. 
+
+If you use VS Code already with JavaScript, give TypeScript a shot. It's amazing how much of the code just falls in place without me reading any API docs. 
+
+Anytime I start a project in JavaScript that's non-trivial, I always start in TypeScript. It's just that good.
+
+## 4. C
+
+C is fun for me as a web apps guy because I understand what every line is doing on a much lower level. It's very easy to reason about what is happening on the machine, in a not-so-abstract realization. Compared to JavaScript, I could tell you what every line is doing in terms of the heap and stack. Sometimes that's really fun. Other times I need to get work done and C isn't the solution. When it is, or when I have to use it for school, I like it.
+
+## 5. JavaScript
 
 JavaScript lets you write code that runs in the browser. There are other options (TypeScript, ClojureScript, WebAssembly), but for the most part, you're just writing JavaScript. 
 
 Yeah it sucks. Yeah nothing makes sense. But ESLint and npm go the distance when you have no other alternatives, and there are thousands of tutorials and resources out there. 
 
-## 5. C
+**Update April 21, 2020**
 
-C is fun for me as a web apps guy because I understand what every line is doing on a much lower level. It's very easy to reason about what is happening on the machine, in a not-so-abstract realization. Compared to JavaScript, I could tell you what every line is doing in terms of the heap and stack. Sometimes that's really fun. Other times I need to get work done and C isn't the solution. When it is, or when I have to use it for school, I like it.
+Since going through another Hackathon and building [Slow YouTube](https://github.com/samuelstevens/slow-youtube) using TypeScript, I now firmly believe that JavaScript shouldn't be used in any scenario where it's possible to use any other language.
 
 ## 6. Java
 
@@ -94,7 +117,7 @@ But it's on my resume, cause, you know. It's Java. I can fumble my way through i
 
 * Elm: Haskell for web apps. Same reasoning as Haskell, but *for web apps*.
 
-**Update 1/21/2020**
+**Update Januuary 21, 2020**
 
 * Rust: type checking, imperative, memory safe, compiled, helpful compiler...seems like Go but without channels and a GC. It might be worth checking out for more performance based problems. If I could interface with it through Python, I think it would completely replace my use of C. 
 
