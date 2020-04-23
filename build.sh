@@ -8,12 +8,10 @@ root=${3:-~/Development}
 input_dir=${root}/${input}
 output_dir=${root}/${output}
 
-shopt -s nullglob
 
 convert_md () {
-  for md in ${input_dir}/**/*.md ${input_dir}/*.md; do
+  for md in $(find ${input_dir} -name '*.md'); do
     if [[ $md != *README* ]]; then
-
       # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
 
       dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
@@ -25,7 +23,7 @@ convert_md () {
 }
 
 convert_html () {
-  for html in ${input_dir}/**/*.html ${input_dir}/*.html; do
+  for html in $(find ${input_dir} -name '*.html'); do
     if [[ $html != *template* ]]; then
       # echo $html | sed -e "s/$input/$output/g"
       cp $html $(echo $html | sed -e "s/$input/$output/g")
@@ -34,15 +32,17 @@ convert_html () {
 }
 
 copy_js () {
-  for js in ${input_dir}/**/*.js; do
+  for js in $(find ${input_dir} -name '*.js'); do
     cp $js $(echo $js | sed -e "s/$input/$output/g")
   done
 }
 
 build () {
+  rm -r $output_dir/* # shitty
+
   # minimizes the css files
   mkdir -p $output_dir/css
-  for css_file in ${input_dir}/css/*.css; do
+  for css_file in $(find ${input_dir} -name '*.css'); do
     cat $css_file | tr -d '\n' | sed -E 's/[[:space:]]+/ /g' > ${output_dir}/css/$(basename $css_file)
   done
 
