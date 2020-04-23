@@ -64,6 +64,8 @@ build () {
   cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
 
   cp ~/Development/airpods/dist/Airpods.dmg ${output_dir}/Airpods.dmg
+
+  cp CNAME ${output_dir}/CNAME
 }
 
 build
