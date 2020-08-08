@@ -40,6 +40,8 @@ When learning a new language, where does it fit? If it's above everything else i
 
 2. [Python](#python) - ubiquitous, powerful, strong ecosystem
 
+4. [Elm](#elm) - strongly typed, purely functional, designed for web apps
+
 3. [TypeScript](#typescript) - strongly typed, works for web apps, easy to pick up if you understand JavaScript
 
 4. [C](#c) - have to think about every line forces efficient code  
@@ -85,7 +87,13 @@ I've used almost exclusively Python in the last 4 months, and learned a lot. Typ
 
 It still seems more useful that TypeScript though, because of Jupyter Notebooks. Granted, a lot of my work is exploratory, data-science stuff that takes advantage of the large Python ecosystem.
 
-## 3. TypeScript
+## 3. Elm
+
+[Elm](https://elm-lang.org/) is a purely functional language with goals of no runtime errors, helpful compiler messages, and a powerful type system. It takes some time to shift mindsets into a functional over imperative style, but I've used it for several weekend projects that spun into week-long projects, and the compiler was a huge help. Coming back to these projects a month later, I found it much, much easier to refactor code, despite forgetting everything that I had written, because the compiler had my back. JSON decoding is hard and I don't really understand it, but everything else was slick. 
+
+I also loved not worrying about Webpack and Bable and JSX and TypeScript and what-have-you because `elm make` just works. Really nice, I strongly recommend trying it out over a weekend. The community is definitely small--I had to write a CSV parsing package. But it works so well, that it was fun to write a CSV parsing package. *Fun.*
+
+## 4. TypeScript
 
 [TypeScript](https://www.typescriptlang.org/) is a typed superset of JavaScript that compiles to plain JavaScript. Basically, you add types to JavaScript so everyone knows whats going on, and so you remove `"TypeError: Cannot read property 'greeting' of undefined"` errors right off the bat. 
 
@@ -95,11 +103,11 @@ If you use VS Code already with JavaScript, give TypeScript a shot. It's amazing
 
 Anytime I start a project in JavaScript that's non-trivial, I always start in TypeScript. It's just that good.
 
-## 4. C
+## 5. C
 
 C is fun for me as a web apps guy because I understand what every line is doing on a much lower level. It's very easy to reason about what is happening on the machine, in a not-so-abstract realization. Compared to JavaScript, I could tell you what every line is doing in terms of the heap and stack. Sometimes that's really fun. Other times I need to get work done and C isn't the solution. When it is, or when I have to use it for school, I like it.
 
-## 5. JavaScript
+## 6. JavaScript
 
 JavaScript lets you write code that runs in the browser. There are other options (TypeScript, ClojureScript, WebAssembly), but for the most part, you're just writing JavaScript. 
 
@@ -109,7 +117,7 @@ Yeah it sucks. Yeah nothing makes sense. But ESLint and npm go the distance when
 
 Since going through another Hackathon and building [Slow YouTube](https://github.com/samuelstevens/slow-youtube) using TypeScript, I now firmly believe that JavaScript shouldn't be used in any scenario where it's possible to use any other language.
 
-## 6. Java
+## 7. Java
 
 Java works everywhere. Everyone I know can read and write some Java. It's strongly typed, compiled, not that slow now that the JVM is optimized, yadda yadda. 
 
@@ -126,8 +134,6 @@ But it's on my resume, cause, you know. It's Java. I can fumble my way through i
 * Erlang/Elixir: writing extremely fault-tolerant concurrent systems sounds really cool, but I have no need for one. 
 
 * Ruby: also apparently really easy to learn, but I have Python and JavaScript. Where does Ruby fit in?
-
-* Elm: Haskell for web apps. Same reasoning as Haskell, but *for web apps*.
 
 **Update Januuary 21, 2020**
 
