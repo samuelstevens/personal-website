@@ -7,7 +7,7 @@ input_dir=${root}/${input}
 output_dir=${root}/${output}
 
 commit_message=${1:-"updated file(s) at $(date)"}
-echo $commit_message
+echo "$commit_message"
 
 publish () {
   git add .
@@ -23,9 +23,13 @@ publish () {
 #   aspell check $writing
 # done
 
-./build.sh
+source build.sh "$input" "$output" "$root"
+clean
+full_convert_md
+build
 
+gocaption --write --quiet "$output_dir"
 
-cd $output_dir
-publish $commit_message
+cd "$output_dir" || exit
+publish "$commit_message"
 

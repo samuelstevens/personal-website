@@ -20,15 +20,19 @@ I've been lucky to intern at GE Aviation (twice!) in Cincinnati and study abroad
 
 I (maybe obviously) like [programming](https://github.com/samuelstevens), and cooking (especially [sandwiches](/pages/sandwiches))
 
-# Previous Projects
+# Projects
 
-[TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets.
+*Ordered from oldest to latest*
 
-[HealthyAgers](/projects/healthyagers): a fullstack web application that I led the development of at Ohio State University.
+ [TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets. *(Jan 2018 - Jan 2020)*
 
-[Airpods](/projects/airpods): a macOS app I published to connect/disconnect from your Airpods quickly.
+[HealthyAgers](/projects/healthyagers): a fullstack web application that I led the development of at Ohio State University. *(June 2018 - Oct 2019)*
 
-[ubscrape](/projects/ubscrape): an Urban Dictionary scraper I built, aimed at NLP research.
+[Airpods](/projects/airpods): a macOS app I published to connect/disconnect from your Airpods quickly. *(September 2020)*
+
+[`ubscrape`](/projects/ubscrape): an Urban Dictionary scraper I built aimed at NLP research. *(November 2020)*
+
+[`img-alter`](/projects/img-alter): a program to add `alt` attributes to `<img/>` tags using MS Azure. *(June 2020)*
 
 # Website Pages
 

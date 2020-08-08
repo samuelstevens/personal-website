@@ -8,6 +8,10 @@ abstract: Why I can't decide whether to learn more languages.
 
 # Programming Languages
 
+**Update Jun 3, 2020**
+
+After spending more time with Go, it feels too general. [More](#go).
+
 **Update April 21, 2020**
 
 I've worked a lot with Python.
@@ -18,7 +22,7 @@ Added Rust.
 
 **Original Post**
 
-Alternatively, *am I a [Blub](http://www.paulgraham.com/avg.html) programmer*?
+*Alternatively, am I a [Blub](http://www.paulgraham.com/avg.html) programmer?*
 
 I've been reading about programming languages a lot. For a while I thought a new language would solve all of my problems. If I just learn Lisp like Paul Graham [says](http://www.paulgraham.com/iflisp.html), I'll never need another language. If I just learn Haskell, everything will work accordingly. If I just learn [elm](https://elm-lang.org/), web apps will just work. And so on. My friends got tired of me saying I was going to learn a new language. I would get halfway through a beginner tutorial, need to write some real code for a problem, and turn back to Python or JavaScript. 
 
@@ -46,9 +50,17 @@ When learning a new language, where does it fit? If it's above everything else i
 
 ## 1. Go
 
-[Go](https://golang.org/) has been really, really cool so far. It's one of the languages that isn't taught at my university, making it more appealing it me for being cool and hip. It's strongly typed, which I've realized is very important for writing readable, maintainable code. It has a garbage collector, so I can write code without having to think about memory all the time. It has an autoformatter, the compiler is aggressive in not letting me compile until I have really good code (cant compile with an unused variable? c'mon), and the standard library is *thicc*. Like, makes Python seem like it has a mediocre standard library thick. It treats errors as values, with no exceptions.
+[Go](https://golang.org/) is cool. It's one of the languages that isn't taught at my university, making it more appealing it to me for being cool and hip. It's strongly typed, which I've realized is very important for writing [readable, maintainable code](/writing/abstractions-and-types). It has a garbage collector, so I can write code without having to think about memory all the time. It has an autoformatter, the compiler is aggressive in not letting me compile until I have higher quality code (can't compile with an unused variable). It treats errors as values, with no exceptions (technically, there's `panic()`).
 
 It's missing native GUI support, and the packages for making a web app are limited, but for building an API server, or a CLI, it is really powerful and easy to write. I like Go, and am excited to continue writing in it.
+
+**Update June 3, 2020**
+
+After building [`img-alter`](/projects/img-alter) in Go, I think Go is almost *too general* a language. If I want to make a webapp, I'd use static HTML with Typescript/React. If I wanted to make a mobile app, I'd use Typescript/React Native. If I wanted to do some data analysis, I'd use Python. If I wanted to do real low-level work (for fun, I guess?), I'd use C. 
+
+If I was building a large project, something the size of TicketBay (at least), then I would consider Go for the backend. Since so much of Go is included, I feel that using external packages isn't encouraged, and so I build a lot of little primitives myself (`func fileExists(path string) bool`, for example). If I was working on a huge project, the control and ability to build the application logic in a strongly typed language with builtin testing primitives would be very useful. I just don't really do that.
+
+Probably the same reason I don't use Java.
 
 ## 2. Python 3
 

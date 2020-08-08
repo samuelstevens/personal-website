@@ -10,7 +10,7 @@ abstract: How to make a program that isn't pretty, but not ugly either.
 
 I'm a CSE student, so I program as a hobby. I like to think I'm good at writing code, deploying applications, fixing errors, and visual design. 
 
-Unfortunately, I am not good at visual design (I'll use design in the rest of this article to mean visual design, aesthetics, etc. Interaction design is very different [1]). I simply haven't practiced enough to improve, and I don't foresee myself working on it in the future. 
+Unfortunately, I am not good at visual design (I'll use design in the rest of this article to mean visual design, aesthetics, etc. Interaction design is very different [^book]). I simply haven't practiced enough to improve, and I don't foresee myself working on it in the future. 
 
 This is a problem, because bad design will cause a negative first impression because it's not visually appealing. I don't want my lack of design skill to limit the viability of my applications. I also don't want to dedicate more time than is necessary to aesthetics when I could be improving the product's power or ease of use. 
 
@@ -66,8 +66,6 @@ Once again, take a critical eye to the website or application and remove unneces
 
 More than anything, feedback from other people, users, and real designers will help. Get feedback. Design is for other people. Show it to other people. 
 
-## Footnotes
-
-[1] [The Inmates are Running the Asylum](https://www.amazon.com/Inmates-Are-Running-Asylum-Products/dp/0672326140) by Alan Cooper explains interaction design very well, and is an excellent book.
-
 Please [email me](mailto:samuel.robert.stevens@gmail.com) if you have any comments or want to discuss further.
+
+[^book]: [The Inmates are Running the Asylum](https://www.amazon.com/Inmates-Are-Running-Asylum-Products/dp/0672326140) by Alan Cooper explains interaction design very well, and is an excellent book.

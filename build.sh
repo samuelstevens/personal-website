@@ -9,17 +9,26 @@ input_dir=${root}/${input}
 output_dir=${root}/${output}
 
 
-convert_md () {
+full_convert_md () {
   for md in $(find ${input_dir} -name '*.md'); do
     if [[ $md != *README* ]]; then
       # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
 
-      dirname=$(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
-      mkdir -p $dirname
+      dirname=$(echo "$md" | sed -e "s/$input/$output/g" | sed 's/md/html/g' | xargs dirname)
+      mkdir -p "$dirname"
 
-      pandoc --from markdown+backtick_code_blocks+link_attributes --to html5 -s --template=template.html --ascii $md > $(echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g')
+      html=$(echo "$md" | sed -e "s/$input/$output/g" | sed "s/md/html/g")
+
+      pandoc --from markdown+backtick_code_blocks+link_attributes --to html5 -s --template=template.html --ascii "$md" --out "$html"
     fi
   done
+}
+
+latest_convert_md () {
+  # finds the latest modified .md file.
+  md=$(find ~/Development/personal-website -name '*.md' -exec ls -1t "{}" + | head -n 1)
+  html=$(echo $md | sed -e "s/$input/$output/g" | sed "s/md/html/g")
+  pandoc --from markdown+backtick_code_blocks+link_attributes --to html5 -s --template=template.html --ascii "$md" --out "$html"
 }
 
 convert_html () {
@@ -33,21 +42,19 @@ convert_html () {
 
 copy_js () {
   for js in $(find ${input_dir} -name '*.js'); do
-    cp $js $(echo $js | sed -e "s/$input/$output/g")
+    cp "$js" $(echo "$js" | sed -e "s/$input/$output/g")
   done
 }
 
 build () {
-  rm -r $output_dir/* # shitty
-
   # minimizes the css files
-  mkdir -p $output_dir/css
+  mkdir -p "$output_dir/css"
   for css_file in $(find ${input_dir} -name '*.css'); do
     cat $css_file | tr -d '\n' | sed -E 's/[[:space:]]+/ /g' > ${output_dir}/css/$(basename $css_file)
   done
 
   # gets the markdown and converts them to html
-  convert_md
+  latest_convert_md
 
   # converts any custom html
   convert_html
@@ -66,6 +73,12 @@ build () {
   cp ~/Development/airpods/dist/Airpods.dmg ${output_dir}/Airpods.dmg
 
   cp CNAME ${output_dir}/CNAME
+
+  echo "incrementally built at $(date)"
+}
+
+clean () {
+  rm -r $output_dir/* # shitty
 }
 
 build

@@ -10,4 +10,10 @@ sleep 1
 
 open $(pbpaste)
 
-nodemon . -e js,sh,css,md,html --exec "./build.sh $input $output $root "
+source build.sh $input $output $root
+
+clean
+full_convert_md
+build
+
+find . -type f | entr ./build.sh $input $output $root
