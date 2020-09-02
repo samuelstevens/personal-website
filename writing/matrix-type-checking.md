@@ -8,16 +8,16 @@ abstract: Can we use static type checking to make sure matrix multiplication wor
 
 # Type Checking Matrix Multiplication
 
-I have historically struggled with NumPy matrices being the right size while working on ML-oriented code. After reading some of [Learn You a Haskell](http://learnyouahaskell.com/) and working on a couple Elm projects ((1)[https://github.com/samuelstevens/elm-slow-youtube], (2)[https://github.com/samuelstevens/elm-csv]), I felt like it was a problem I could solve.
+I have historically struggled with NumPy matrices being the right size while working on ML-oriented code. After reading some of [Learn You a Haskell](http://learnyouahaskell.com/) and working on a couple Elm projects ([1](https://github.com/samuelstevens/elm-slow-youtube), [2](https://github.com/samuelstevens/elm-csv)), I felt like it was a problem I could solve using [`mypy`](https://mypy.readthedocs.io/en/stable/index.html)'s more advanced features.
 
 The basic idea is a wrapper class for NumPy matrices that overloads `*`, `+` and whatever else you want to type check the matrix dimensions using `mypy` before running the code. This only seemed possible because most of the matrices in a my typical ML problems are fixed sizes, and not changing at runtime.
 
 The end result is:
 
 ```python
-a = Matrix[_100, _500](np.zeros((100, 500)))
-b = Matrix[_100, _500](np.zeros((100, 500)))
-c = Matrix[_500, _600](np.zeros((500, 600)))
+a = Matrix[_100, _500](np.zeros((100, 500))) # 100 x 500 matrix
+b = Matrix[_100, _500](np.zeros((100, 500))) # 100 x 500 matrix
+c = Matrix[_500, _600](np.zeros((500, 600))) # 500 x 600 matrix
 a + b
 a * b # throws a mypy error
 a * c
@@ -126,12 +126,17 @@ a * b # throws a mypy error
 a * c # safe
 ```
 
-Because `__mul__` requires that the generic types for the columns and rows for the first and second matrices, respectively, `a * b` throws a error in mypy: `Unsupported operand types for * ("Matrix[Literal[100], Literal[200]]" and "Matrix[Literal[100], Literal[200]]")`. Not the best error in the world, but clear enough and it happens before running.
+Because `__mul__` requires that the generic types for the columns and rows for the first and second matrices, respectively, `a * b` throws a error in mypy: 
+
+> `Unsupported operand types for * ("Matrix[Literal[100], Literal[200]]" and "Matrix[Literal[100], Literal[200]]")`. 
+
+Not the best error in the world, but clear enough and it happens before running.
 
 The rest of it is just implementation details:
-* Since we use `Matrix` in the function signature of `__mul__`, we have to quote it to solve forward reference issues. 
-* We need an actual `.matrix` member in `Matrix` to store the numpy matrix.
-* We need a bunch of types for common matrix dimensions: maybe 100 through 1000 and then some powers of 2.
+
+- Since we use `Matrix` in the function signature of `__mul__`, we have to quote it to solve forward reference issues. 
+- We need an actual `.matrix` member in `Matrix` to store the numpy matrix.
+- We need a bunch of types for common matrix dimensions: maybe 100 through 1000 and then some powers of 2.
 
 Obviously, the downside of this is having to define types for all the dimensions. If there was a way to do this with just integer literals, that would be a massive improvement. I'd also like someway to verify that the shape of the matrix matches the literals, but it would have to be at runtime anyways.
 

@@ -28,7 +28,7 @@ clean
 full_convert_md
 build
 
-gocaption --write --quiet "$output_dir"
+# gocaption --write --quiet "$output_dir"
 
 cd "$output_dir" || exit
 publish "$commit_message"

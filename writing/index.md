@@ -8,6 +8,8 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
+08/08/2020 [Type-checking Matrix Dimensions in Python with MyPy](/writing/matrix-type-checking)
+
 05/29/2020 [Analyzing German Rap Lyrics](/writing/german-rap)
 
 03/29/2020 [CTF 2020 Reflection](/writing/ctf-2020)
