@@ -1,12 +1,16 @@
 ---
 title: Writing
 author:
-    - Sam Stevens
-keywords: ['writing', 'blog', 'essays']
+  - Sam Stevens
+keywords: ["writing", "blog", "essays"]
 abstract: A collection of my writing/blogging about programming, life and startups.
 ---
 
 # Writing
+
+10/04/2020 [Papers are Neat: What Does BERT Look At?](/writing/what-does-bert-look-at)
+
+09/27/2020 [Multiprocessing Queue Example in Python](/writing/python-multiprocessing)
 
 08/08/2020 [Type-checking Matrix Dimensions in Python with MyPy](/writing/matrix-type-checking)
 

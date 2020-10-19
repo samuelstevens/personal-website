@@ -1,18 +1,30 @@
 ---
 title: Pseudo-elements in CSS
 author:
-    - Sam Stevens
-keywords: [programming, css, html, pseudo-elements, pseudoelements, pseudo, elements, :after, ::after]
+  - Sam Stevens
+keywords:
+  [
+    programming,
+    css,
+    html,
+    pseudo-elements,
+    pseudoelements,
+    pseudo,
+    elements,
+    :after,
+    ::after,
+  ]
 abstract: Why pseudo elements aren't that scary!
 ---
 
 # Pseudo-elements in CSS
 
-Pseudo-elements like `::after` and `::before` used to terrify me. Then I used them once and I thought "time to write a blog post". Given that, there will almost certainly be mistakes or not-best-practices in here. I still want to share what I learned, in case it can help anyone else out. 
+Pseudo-elements like `::after` and `::before` used to terrify me. Then I used them once and I thought "time to write a blog post". Given that, there will almost certainly be mistakes or not-best-practices in here. I still want to share what I learned, in case it can help anyone else out.
 
-I'm going to show some CSS to highlight links (*hover over some of the links on this page if you're on desktop to see it*) using the `::after` element, and then **break down how it works**. 
+I'm going to show some CSS to highlight links (_hover over some of the links on this page if you're on desktop to see it_) using the `::after` element, and then **break down how it works**.
 
 ## Table of Contents
+
 1. [Complete CSS for links](#complete-css-that-were-going-to-build)
 2. [What is `::after`?](#what-in-gods-name-is-after)
 3. [`::after` with links](#after-with-links)
@@ -36,7 +48,7 @@ a:hover {
 a::after {
   content: "";
   background-color: #91710a;
-  
+
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -45,7 +57,7 @@ a::after {
   height: 0%;
 
   transition: all ease 0.2s;
-  
+
   z-index: -1;
 }
 
@@ -83,9 +95,9 @@ p::after {
 
 ## `::after` with Links
 
-So, going back to highlighting links. We're going to animate the `::after` element on every `<a>` tag when someone hovers over it. 
+So, going back to highlighting links. We're going to animate the `::after` element on every `<a>` tag when someone hovers over it.
 
-First, we need `<a>` tags to have `position: relative;` and `display: inline-block;` so that we can position our highlight appropriately. 
+First, we need `<a>` tags to have `position: relative;` and `display: inline-block;` so that we can position our highlight appropriately.
 
 ```css
 a {
@@ -102,14 +114,14 @@ a::after {
   /* we want it to be empty */
   content: "";
   background-color: #91710a;
-  
+
   /* cover the entire <a> tag */
   position: absolute;
   bottom: 0px;
   top: 0px;
   right: 0px;
   left: 0px;
-  
+
   /* it still needs to sit behind <a>'s text */
   z-index: -1;
 }
@@ -133,7 +145,7 @@ The final component is animating the growth of the element:
 a::after {
   content: "";
   background-color: #91710a;
-  
+
   position: absolute;
   bottom: 0px;
   /* when not hovered, it shouldn't show */
@@ -197,9 +209,9 @@ a::after:hover {
 
 I hope this helped you understand what pseudo-elements are and how useful they can be!
 
-> I shamelessly took this style of expanding-link highlights from [https://sobolevn.me/](https://sobolevn.me/). 
+> I shamelessly took this style of expanding-link highlights from [https://sobolevn.me/](https://sobolevn.me/).
 
-## More Resources 
+## More Resources
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
 - [Pseudo-elements for CSS shapes](https://css-tricks.com/the-shapes-of-css/)
