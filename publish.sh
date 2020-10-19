@@ -15,14 +15,6 @@ publish () {
   git push
 }
 
-
-# python3 writing.py
-
-
-# for writing in ${input_dir}/writing/*.md; do
-#   aspell check $writing
-# done
-
 source build.sh "$input" "$output" "$root"
 clean
 full_convert_md
