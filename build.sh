@@ -84,6 +84,8 @@ build () {
   # copies my resume
   cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
 
+  cp ~/Documents/school/grad-school/cv/cv.pdf ${output_dir}/cv.pdf
+
   cp ~/Development/airpods/dist/Airpods.dmg ${output_dir}/Airpods.dmg
 
   cp CNAME ${output_dir}/CNAME
