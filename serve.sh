@@ -4,6 +4,10 @@ input=personal-website
 output=samuelstevens.github.io
 root=~/Development
 
+node --version
+
+sleep 0.5
+
 serve $root/$output &
 
 sleep 1

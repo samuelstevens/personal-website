@@ -66,6 +66,12 @@ code {
 p code {
   background-color: var(--nice-gray);
 }
+li {
+  padding-left: 12px;
+}
+sup {
+  line-height: 0;
+}
 .sandwich-pic {
   display: block;
   width: 440px;

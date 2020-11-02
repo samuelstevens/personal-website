@@ -8,7 +8,7 @@ abstract: About me! My name is Sam Stevens, and I'm a fourth year undergrad at T
 
 # About Me
 
-[[CV](/cv.pdf)] [[Email](mailto:samuel.robert.stevens@gmail.com)] [[GitHub](https://github.com/samuelstevens)]
+[[CV](/cv.pdf)] [[GitHub](https://github.com/samuelstevens)] [[Email](mailto:samuel.robert.stevens@gmail.com)]
 
 My name is Sam Stevens. I'm a fourth year undergrad at THE Ohio State University, where I study Computer Science and minor in German.
 

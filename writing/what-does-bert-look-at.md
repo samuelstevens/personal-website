@@ -62,11 +62,11 @@ If you're interested in how this all works, I recommend the following.
 Attention is a mechanism for models to figure out which word is most important at different points in a sentence.
 Transformers use attention exclusively (it used to be a supplemental mechanism) to great success.
 BERT is one of the most popular and succesful transformer models, released by Google in 2019.
-In BERT (specifically the base model), a sentence goes through 12 layers of modeling, and in each layer, each word "points" to another word in the sentence as the "most important" to it.
+In BERT (specifically the base model), a sentence goes through 12 layers of modeling, and in each layer, for each word, attention _heads_ point to another word in the sentence as the "most important".
 
 ## The Paper
 
-Clark and his co-authors inspect the overall trends of attention heads and find that some heads in the earlier layers put the majority of their attention on either the next or previous token in the sentence.
+Clark and his co-authors inspect the overall attention trends of and find that some of the attention head in the earlier layers put the majority of their weight on either the next or previous token in the sentence.
 
 > In particular four attention heads (in layers 2, 4, 7, and 8) on average put >50% of their attention on the previous token and five attention heads (in layers 1, 2, 2, 3, and 6) put >50% of their attention on the next token.
 
@@ -80,8 +80,9 @@ This finding is further supported by applying gradient-based measures of feature
 
 The part of the paper that made me gasp was the analysis of BERT's ability to parse syntactic structures from raw text.
 For a variety of syntactic structures ("direct objects of verbs, determiners of nouns, objects of prepositions and objects of possessive pronouns"), Clark and his co-authors look for a particular attention head that best predicts these dependencies.
-That means they looked for a sentence "The cat ate the mouse.", the authors look for an attention head, that, when it is looking at "mouse", attends most heavily to "ate".
-I won't copy the entire table here, but the results in the paper are fantastic.
+That means that for the sentence "The cat ate the mouse", the authors look for an attention head points from "mouse" to "ate".
+I won't copy the entire table here, but the results in the paper are very positive.
+Bert learns these relationships surprisingly well.
 
 What _really_ is nuts, however, is BERT learning the structure of objects of possessive pronouns.
 Clark and his co-authors find that BERT does not have an attention head that attends from an object to its possessive pronoun.
