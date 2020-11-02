@@ -8,7 +8,7 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
-10/25/2020 [Modern Systems Languages](/writing/modern-systems-langs)
+<!-- 10/25/2020 [Modern Systems Languages](/writing/modern-systems-langs) -->
 
 10/04/2020 [Papers are Neat: What Does BERT Look At?](/writing/what-does-bert-look-at)
 

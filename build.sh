@@ -28,7 +28,7 @@ convert_single_md() {
 
 full_convert_md () {
   for md in $(find ${input_dir} -name '*.md'); do
-    if [[ $md != *README* ]]; then
+    if [[ $md != *README* && $md != *draft* ]]; then
       # echo $md | sed -e "s/$input/$output/g" | sed 's/md/html/g'
       convert_single_md "$md"
     fi
