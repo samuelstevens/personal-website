@@ -20,17 +20,17 @@ I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in
 
 # Projects
 
-_Ordered from oldest to latest_
+[Quiet HN](/projects/quiet-hn): a simple Hacker News site, remade in the style of the original [quiethn.com](https://quiethn.com) (no longer active).
 
-[TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets. _(Jan 2018 - Jan 2020)_
-
-[HealthyAgers](/projects/healthyagers): a fullstack web application that I led the development of at Ohio State University. _(June 2018 - Oct 2019)_
-
-[Airpods](/projects/airpods): a macOS app I published to connect/disconnect from your Airpods quickly. _(September 2020)_
+[`img-alter`](/projects/img-alter): a program to add `alt` attributes to `<img/>` tags using MS Azure. _(June 2020)_
 
 [`ubscrape`](/projects/ubscrape): an Urban Dictionary scraper I built aimed at NLP research. _(November 2020)_
 
-[`img-alter`](/projects/img-alter): a program to add `alt` attributes to `<img/>` tags using MS Azure. _(June 2020)_
+[Airpods](/projects/airpods): a macOS app I published to connect/disconnect from your Airpods quickly. _(September 2020)_
+
+[HealthyAgers](/projects/healthyagers): a fullstack web application that I led the development of at Ohio State University. _(June 2018 - Oct 2019)_
+
+[TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets. _(Jan 2018 - Jan 2020)_
 
 # Website Pages
 
