@@ -18,6 +18,17 @@ I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](ht
 
 I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in Dresden, Germany, and intern at Microsoft remotely.
 
+# News
+
+- 11/2020: : [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/live/winners.html) (as `//todo`) with an app to convert voice to code using BART a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/).
+- 05/2020: Internship at Microsoft (remotely)! Working on the Power BI team.
+- 11/2019: [Won Hack OHI/O for the 2nd time](https://engineering.osu.edu/news/2019/12/hackohio-winners-showcase-problem-solving-and-persistence) with an app to make text more accessible with OCR and text-to-speech.
+- 06/2019: Starting study abroad program in Dresden, Germany!
+- 05/2019: [Awarded the Huntington International Fellowship](https://cllc.osu.edu/news/2019-huntington-international-fellowship-winners-named)
+- 01/2019: [College of Engineering published an article about TicketBay!](https://engineering.osu.edu/news/2019/01/cse-students-make-buying-and-selling-tickets-easy-new-app)
+- 05/2018: Internship at GE Aviation! Working in GE Digital on end-to-end testing frameworks.
+- 06/2017: Internship at GE Aviation through Cincinnati's INTERAlliance program.
+
 # Projects
 
 [Quiet HN](/projects/quiet-hn): a simple Hacker News site, remade in the style of the original [quiethn.com](https://quiethn.com) (no longer active).

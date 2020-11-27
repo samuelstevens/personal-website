@@ -13,7 +13,7 @@ Quiet HN was featured on Hacker News several months ago. It was a website that s
 
 While talking with some friends, I figured that the app could be done purely client-side since the Hacker News API doesn't require an API key. So I wrote it in Elm to practice the ol' functional programming, and then hosted it with GitHub pages.
 
-[You can visit the website here.](/elm-quiet-hn)
+<a href="/elm-quiet-hn" target="_blank" data-no-instant>You can visit the website here.</a>
 
 (The original site also had really minimal CSS, just like my remake.)
 

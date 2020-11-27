@@ -57,7 +57,7 @@ If you're interested in how this all works, I recommend the following.
    2. [Part 2](https://towardsdatascience.com/deconstructing-bert-part-2-visualizing-the-inner-workings-of-attention-60a16d86b5c1)
    3. [Explore with the `huggingface` library](https://mccormickml.com/2019/07/22/BERT-fine-tuning/)
 
-## Attention/Transformers/BERT TL;DR
+## Attention & Transformers & BERT TL;DR
 
 Attention is a mechanism for models to figure out which word is most important at different points in a sentence.
 Transformers use attention exclusively (it used to be a supplemental mechanism) to great success.
