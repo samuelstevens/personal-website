@@ -2,17 +2,24 @@
 title: Sam Stevens
 author:
   - Sam Stevens
-keywords: [sam stevens, samuel stevens, samuelstevens.me]
-abstract: About me! My name is Sam Stevens, and I'm a fourth year undergrad at THE Ohio State University.
+keywords:
+  [
+    sam stevens,
+    samuel stevens,
+    samuelstevens.me,
+    samuel robert stevens,
+    Ohio State,
+    Ohio State University,
+    OSU,
+  ]
+abstract: My name is Sam Stevens, and I'm a fourth year undergrad at THE Ohio State University.
 ---
 
 # About Me
 
-[[CV](/cv.pdf)] [[GitHub](https://github.com/samuelstevens)] [[Email](mailto:samuel.robert.stevens@gmail.com)]
-
 My name is Sam Stevens. I'm a fourth year undergrad at THE Ohio State University, where I study Computer Science and minor in German.
 
-I'm currently (autumn 2020) working on my honors undergraduate thesis in natural language processing with [Prof. Yu Su](https://ysu1989.github.io/).
+I'm currently (autumn 2020) working on my honors undergraduate research thesis in natural language processing with [Prof. Yu Su](https://ysu1989.github.io/).
 
 I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30).
 
@@ -20,7 +27,7 @@ I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in
 
 # News
 
-- 11/2020: : [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/live/winners.html) (as `//todo`) with an app to convert voice to code using BART a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/).
+- 11/2020: : [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/#winners) (as team `//todo`) with an app to convert voice to code using BART a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/). Video demo [here](https://youtu.be/YzGKLUlunUM).
 - 05/2020: Internship at Microsoft (remotely)! Working on the Power BI team.
 - 11/2019: [Won Hack OHI/O for the 2nd time](https://engineering.osu.edu/news/2019/12/hackohio-winners-showcase-problem-solving-and-persistence) with an app to make text more accessible with OCR and text-to-speech.
 - 06/2019: Starting study abroad program in Dresden, Germany!
@@ -43,8 +50,12 @@ I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in
 
 [TicketBay](/projects/ticketbay): fellow OSU students and I developed a mobile app for Ohio State University students to sell second-hand football tickets. _(Jan 2018 - Jan 2020)_
 
-# Website Pages
+<!-- # Website Pages -->
 
 <!-- [Machine Learning Notes](/pages/machine-learning-notes): Some notes on machine learning. Mostly a glossary of little terms that I want to remember for later on. -->
 
 <!-- [Sam-wiches](/pages/sandwiches): A project to make a bunch of sandwiches. Currently on hold because of COVID-19. -->
+
+# Contact
+
+[[CV](/cv.pdf)] [[GitHub](https://github.com/samuelstevens)] [[Email](mailto:samuel.robert.stevens@gmail.com)]

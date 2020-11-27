@@ -7,26 +7,24 @@
   <meta charset="utf-8" />
   <meta name="description" content="$abstract$" />
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-  <title>Behold: $title$</title>
+  <title>$title$</title>
   $for(metatags)$$metatags$$sep$ $endfor$
 </head>
 
 <body>
+  <aside>
+    <div id="sidebar">
+      <img src="/images/me.jpeg" />
+      <h1>Sam Stevens</h1>
+      <p><a href="/">[Home]</a> <a href="/writing">[Writing]</a></p>
+    </div>
+  </aside>
   <main>
-    <header>
-      <h1>Behold, My Stuff</h1>
-      <p>
-        [<a href="/">Home</a>]
-        [<a href="/writing">Writing</a>]
-        [<a href="/elm-quiet-hn" target="_blank" data-no-instant>Quiet HN</a>]
-      </p>
-    </header>
-
     <article>
       <!-- Must be unindented to prevent code indentation being broken -->
-$body$
+      $body$
       <hr />
-      <p>[<a href="https://www.youtube.com/watch?v=SHbS9tYFpcQ">Relevant link</a>]</p>
+      <!-- <p>[<a href="https://www.youtube.com/watch?v=SHbS9tYFpcQ">Relevant link</a>]</p> -->
       <p>Sam Stevens, 2020</p>
       <p>
         <a href="https://github.com/samuelstevens/personal-website">Source</a>
