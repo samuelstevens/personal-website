@@ -1,14 +1,25 @@
 ---
 title: Jupyter Notebooks for Engineering Classes
 author:
-    - Sam Stevens
-keywords: [jupyter, engineering, homework, sympy, algebra, solving, complex numbers]
+  - Sam Stevens
+keywords:
+  [
+    jupyter,
+    engineering,
+    homework,
+    sympy,
+    algebra,
+    solving,
+    complex numbers,
+    guide,
+    tutorial,
+  ]
 abstract: How I use Jupyter and Sympy for engineering homework.
 ---
 
 # Jupyter Notebooks for Engineering Classes
 
-I have one more "traditional" engineering class in my time at Ohio State which is ECE 2020: Introduction to Analogue Circuits. I took digital circuits a couple semesters ago, and that class was basically boolean expressions but with little lines connecting to boxes. This class is more resistors/inductors/capacitors/*I never took a class on complex numbers oh God*. So, there's a little more algebra involved, and it becomes especially unwieldy when we start using complex numbers for the phasor domain. 
+I have one more "traditional" engineering class in my time at Ohio State which is ECE 2020: Introduction to Analogue Circuits. I took digital circuits a couple semesters ago, and that class was basically boolean expressions but with little lines connecting to boxes. This class is more resistors/inductors/capacitors/_I never took a class on complex numbers oh God_. So, there's a little more algebra involved, and it becomes especially unwieldy when we start using complex numbers for the phasor domain.
 
 But I knew there were symbolic solvers out there ([Wolfram Alpha](https://www.wolframalpha.com/), for one), and I was feeling more comfortable with [Jupyter notebooks](https://jupyter.org/), so I decided to use [Sympy](https://www.sympy.org/en/index.html) to do all of my homework for ECE 2020 in a notebook.
 
@@ -54,7 +65,6 @@ This will launch the web interface. From here, I navigate to my class folder and
 
 ![A new notebook](/images/jupyter/new-notebook.png)
 
-
 ## Solve Problems
 
 I always import Sympy and `exp` from `cmath`, and set up j to mean `0+1j`:
@@ -66,7 +76,6 @@ j = 1j # for convenience
 ```
 
 And here's an example of how I would do an ECE problem:
-
 
 First, set up my constants.
 
@@ -91,7 +100,7 @@ zC = -j / (300 * 5 * 10 ** -6)
 print('zC:', zC)
 ```
 
-Finally, I use Sympy to solve for variables in multiple equations. 
+Finally, I use Sympy to solve for variables in multiple equations.
 
 > Note: You need to set up `Va` and `Vc` as `sym.Symbol()` for Sympy to solve for it.
 
@@ -103,7 +112,7 @@ Vc = sym.Symbol('Vc')
 
 result = sym.solve(
     (
-        (Va - v) / z1 + (Va - Vc) / zL, 
+        (Va - v) / z1 + (Va - Vc) / zL,
         (Vc - Va) / zL + Vc / z2 - i
         # as far as I know, these equations are always assumed to equal 0
     ),

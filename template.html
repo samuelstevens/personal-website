@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="description" content="$abstract$" />
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-  <title>$title$</title>
+  <title>Behold: $title$</title>
   $for(metatags)$$metatags$$sep$ $endfor$
 </head>
 
@@ -15,20 +15,26 @@
   <aside>
     <div id="sidebar">
       <img src="/images/me.jpeg" />
-      <h1>Sam Stevens</h1>
-      <p><a href="/">[Home]</a> <a href="/writing">[Writing]</a></p>
+      <p>Sam Stevens</p>
     </div>
   </aside>
   <main>
+    <header>
+      <h1>Behold, My Stuff</h1>
+      <p>
+        [<a href="/">Home</a>]
+        [<a href="/writing">Writing</a>]
+        [<a href="/cv.pdf">CV</a>]
+        [<a href="https://github.com/samuelstevens">GitHub</a>]
+        [<a href="mailto:samuel.robert.stevens@gmail.com">Email</a>]
+      </p>
+    </header>
     <article>
       <!-- Must be unindented to prevent code indentation being broken -->
-      $body$
+$body$
       <hr />
-      <!-- <p>[<a href="https://www.youtube.com/watch?v=SHbS9tYFpcQ">Relevant link</a>]</p> -->
+      <p>[<a href="https://www.youtube-nocookie.com/embed/SHbS9tYFpcQ">Relevant link</a>] [<a href="https://github.com/samuelstevens/personal-website">Source</a>]</p>
       <p>Sam Stevens, 2020</p>
-      <p>
-        <a href="https://github.com/samuelstevens/personal-website">Source</a>
-      </p>
     </article>
   </main>
   <script src="/js/instantclick.min.js" data-no-instant></script>

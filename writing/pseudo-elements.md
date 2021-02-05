@@ -13,6 +13,8 @@ keywords:
     elements,
     :after,
     ::after,
+    guide,
+    tutorial,
   ]
 abstract: Why pseudo elements aren't that scary!
 ---

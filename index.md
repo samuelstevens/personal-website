@@ -14,6 +14,7 @@ keywords:
   ]
 abstract: My name is Sam Stevens, and I'm a fourth year undergrad at THE Ohio State University.
 ---
+[[About](#about-me)] [[News](#news)] [[Projects](#projects)] [[Behold, my stuff!](#behold-my-stuff)]
 
 # About Me
 
@@ -21,20 +22,27 @@ My name is Sam Stevens. I'm a fourth year undergrad at THE Ohio State University
 
 I'm currently (autumn 2020) working on my honors undergraduate research thesis in natural language processing with [Prof. Yu Su](https://ysu1989.github.io/).
 
+I'm applying to PhD programs in computer science with a focus on NLP research and looking for research internships and opportunities for the summer of 2021.
+
 I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30).
 
 I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in Dresden, Germany, and intern at Microsoft remotely.
 
 # News
 
-- 11/2020: : [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/#winners) (as team `//todo`) with an app to convert voice to code using BART a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/). Video demo [here](https://youtu.be/YzGKLUlunUM).
+<div id="news-items">
+
+- 11/2020: [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/#winners) (as team `//todo`) with an app to convert voice to code using BART, a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/). Video demo [here](https://youtu.be/YzGKLUlunUM).
 - 05/2020: Internship at Microsoft (remotely)! Working on the Power BI team.
 - 11/2019: [Won Hack OHI/O for the 2nd time](https://engineering.osu.edu/news/2019/12/hackohio-winners-showcase-problem-solving-and-persistence) with an app to make text more accessible with OCR and text-to-speech.
 - 06/2019: Starting study abroad program in Dresden, Germany!
-- 05/2019: [Awarded the Huntington International Fellowship](https://cllc.osu.edu/news/2019-huntington-international-fellowship-winners-named)
+- 05/2019: [Awarded the Huntington International Fellowship!](https://cllc.osu.edu/news/2019-huntington-international-fellowship-winners-named)
+- 04/2019: [Honorable mention for best visualization at DataFest 2019!](https://data-analytics.osu.edu/datafest/previous-datafests-2019)
 - 01/2019: [College of Engineering published an article about TicketBay!](https://engineering.osu.edu/news/2019/01/cse-students-make-buying-and-selling-tickets-easy-new-app)
 - 05/2018: Internship at GE Aviation! Working in GE Digital on end-to-end testing frameworks.
 - 06/2017: Internship at GE Aviation through Cincinnati's INTERAlliance program.
+
+</div>
 
 # Projects
 
@@ -56,6 +64,8 @@ I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in
 
 <!-- [Sam-wiches](/pages/sandwiches): A project to make a bunch of sandwiches. Currently on hold because of COVID-19. -->
 
-# Contact
+# Behold, My STUFF!
 
-[[CV](/cv.pdf)] [[GitHub](https://github.com/samuelstevens)] [[Email](mailto:samuel.robert.stevens@gmail.com)]
+[Social media](http://adamalterauthor.com/irresistible/) [is a real](https://www.nirandfar.com/indistractable/) [problem](https://www.thesocialdilemma.com/). This website gives me a creative outlet without the pressure of likes, comments or retweets. I control all the content, all the styling, everything.
+
+This website is my _personal_ website. I'm not a person who takes myself very seriously. So this website doesn't take itself very seriously either. It's my [stuff](https://www.youtube-nocookie.com/embed/SHbS9tYFpcQ), not my [CV](/cv.pdf).

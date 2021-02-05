@@ -18,7 +18,7 @@ convert_single_md() {
 
   # check if the file has references and needs '--citeproc'
   if grep --quiet "^references:" "$md"; then
-    citeproc="--filter pandoc-citeproc"
+    citeproc="--citeproc"
   else
     citeproc=""
   fi
@@ -81,8 +81,8 @@ build () {
   mkdir -p "$output_dir/images"
   cp -r "$input_dir"/images/* $output_dir/images
 
-  # copies my resume
-  cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
+  # copies my resume (I use a CV now)
+  # cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
 
   cp ~/Documents/school/grad-school/cv/cv.pdf ${output_dir}/cv.pdf
 

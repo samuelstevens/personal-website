@@ -8,6 +8,8 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
+<!-- 12/16/2020 [The Vim Article](/writing/vim) -->
+
 <!-- 10/25/2020 [Modern Systems Languages](/writing/modern-systems-langs) -->
 
 10/04/2020 [Papers are Neat: What Does BERT Look At?](/writing/what-does-bert-look-at)
@@ -26,9 +28,9 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 01/29/2020 [iOS 13's Music App Sucks](/writing/ios-13s-music-app-sucks)
 
-01/14/2020: [Guide: Optimizing Python Code with `ctypes`](/writing/optimizing-python-code-with-ctypes)
+01/14/2020: [Optimizing Python Code with `ctypes`](/writing/optimizing-python-code-with-ctypes)
 
-<!-- 01/14/2020: [Profiling Python Code with `cProfile`](/writing/profiling-python-code-with-cprofile) -->
+01/14/2020: [Profiling Python Code with `cProfile`](/writing/profiling-python-code-with-cprofile)
 
 01/11/2020: [Abstractions and Types](/writing/abstractions-and-types)
 
@@ -43,3 +45,13 @@ abstract: A collection of my writing/blogging about programming, life and startu
 07/20/2019: [Design](/writing/design)
 
 07/07/2019: [Focus](/writing/focus)
+
+# Guides
+
+03/25/2020 [Jupyter Notebooks for Engineering Classes](/writing/jupyter-for-hw)
+
+03/15/2020 [Pseudo-elements in CSS](/writing/pseudo-elements)
+
+01/14/2020: [Optimizing Python Code with `ctypes`](/writing/optimizing-python-code-with-ctypes)
+
+01/14/2020: [Profiling Python Code with `cProfile`](/writing/profiling-python-code-with-cprofile)

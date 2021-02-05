@@ -1,8 +1,20 @@
 ---
 title: Profiling Python with cProfile
 author:
-    - Sam Stevens
-keywords: [python, profiling, profile, cProfile, cprofile, cpython, fast, faster]
+  - Sam Stevens
+keywords:
+  [
+    python,
+    profiling,
+    profile,
+    cProfile,
+    cprofile,
+    cpython,
+    fast,
+    faster,
+    guide,
+    tutorial,
+  ]
 abstract: How to profile Python code with `cProfile`.
 ---
 
@@ -43,9 +55,10 @@ Additionally, `cProfile` can be used from inside your source code like so:
 ```python
 cProfile.run("eval(arg1, arg2)", sort='tottime', filename='eval.prof')
 ```
+
 The only downside of this is that the first argument is a string that is evaluated by `cProfile` instead of passing a function and some arguments. Other than that, it works in exactly the same manner.
 
-Regardless of how you use it, the output from these `cProfile` tools is *loooong*. It can be read, but it's often easier to use it in another tool. Python has support for this with the [`pstats.Stats`](https://docs.python.org/3/library/profile.html#pstats.Stats) class.
+Regardless of how you use it, the output from these `cProfile` tools is _loooong_. It can be read, but it's often easier to use it in another tool. Python has support for this with the [`pstats.Stats`](https://docs.python.org/3/library/profile.html#pstats.Stats) class.
 
 ## Visualizing Profiling Data with SnakeViz
 
