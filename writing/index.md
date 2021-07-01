@@ -8,6 +8,12 @@ abstract: A collection of my writing/blogging about programming, life and startu
 
 # Writing
 
+19/06/2021 [I Suck at Naming Python Modules](writing/python-names)
+
+10/02/2021 [Man Page Numbers](/writing/man)
+
+05/02/2021 [Learning Lisp](/writing/lisp)
+
 <!-- 12/16/2020 [The Vim Article](/writing/vim) -->
 
 <!-- 10/25/2020 [Modern Systems Languages](/writing/modern-systems-langs) -->

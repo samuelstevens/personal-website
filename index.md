@@ -12,27 +12,26 @@ keywords:
     Ohio State University,
     OSU,
   ]
-abstract: My name is Sam Stevens, and I'm a fourth year undergrad at THE Ohio State University.
+abstract: My name is Sam Stevens, and I'm an incoming PhD student at THE Ohio State University.
 ---
 [[About](#about-me)] [[News](#news)] [[Projects](#projects)] [[Behold, my stuff!](#behold-my-stuff)]
 
 # About Me
 
-My name is Sam Stevens. I'm a fourth year undergrad at THE Ohio State University, where I study Computer Science and minor in German.
+My name is Sam Stevens. I'm an incoming PhD student at [THE Ohio State University](https://www.osu.edu/), where I will work in Computer Science. I finished my Bachelor's of Science in Computer Science at Ohio State in 2021 (and minored in German).
 
-I'm currently (autumn 2020) working on my honors undergraduate research thesis in natural language processing with [Prof. Yu Su](https://ysu1989.github.io/).
+I'm currently (summer 2021) working at [SpaceX](https://www.spacex.com/) in Seattle (and a little on research in natural language processing with [Prof. Yu Su](https://ysu1989.github.io/)).
 
-I'm applying to PhD programs in computer science with a focus on NLP research and looking for research internships and opportunities for the summer of 2021.
+I've been lucky to intern at Microsoft remotely, study abroad in Dresden and intern at GE Aviation (twice!) in Cincinnati.
 
-I previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30).
-
-I've been lucky to intern at GE Aviation (twice!) in Cincinnati, study abroad in Dresden, Germany, and intern at Microsoft remotely.
+I also previously worked on [TicketBay](/projects/ticketbay) with [Salty Software](https://salty.software) and [HealthyAgers](/projects/healthyagers) with [Dr Ruchika Prakash](https://psychology.osu.edu/people/prakash.30).
 
 # News
 
 <div id="news-items">
 
-- 11/2020: [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/#winners) (as team `//todo`) with an app to convert voice to code using BART, a custom language parser and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/). Video demo [here](https://youtu.be/YzGKLUlunUM).
+- 05/2021: Internship at SpaceX in Seattle, working on the Starlink team!
+- 11/2020: [Won Best UI/UX and Buckeye's Choice Awards at Hack OHI/O](https://hack.osu.edu/2020/#winners) (as team `//todo`) with an app to convert voice to code using BART, a custom natural language to code neural model and a _gorgeous_ React app by [Garrett Morse](https://garrettmorse.com/). Video demo [here](https://youtu.be/YzGKLUlunUM).
 - 05/2020: Internship at Microsoft (remotely)! Working on the Power BI team.
 - 11/2019: [Won Hack OHI/O for the 2nd time](https://engineering.osu.edu/news/2019/12/hackohio-winners-showcase-problem-solving-and-persistence) with an app to make text more accessible with OCR and text-to-speech.
 - 06/2019: Starting study abroad program in Dresden, Germany!

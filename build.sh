@@ -81,7 +81,7 @@ build () {
   mkdir -p "$output_dir/images"
   cp -r "$input_dir"/images/* $output_dir/images
 
-  # copies my resume (I use a CV now)
+  # copies my resume (I use a CV now :cool:)
   # cp ~/Documents/Work/Sam\ Stevens\ Resume\ $(date +%Y).pdf ${output_dir}/resume.pdf
 
   cp ~/Documents/school/grad-school/cv/cv.pdf ${output_dir}/cv.pdf
@@ -89,6 +89,15 @@ build () {
   cp ~/Development/airpods/dist/Airpods.dmg ${output_dir}/Airpods.dmg
 
   cp CNAME ${output_dir}/CNAME
+
+  # readinglist.json is my readinglist as an RSS feed
+  if [[ -f "readinglist.json" ]]; then
+    cp "readinglist.json" "${output_dir}/readinglist.json"
+  fi
+  # readinglist.xml is my readinglist as an RSS feed
+  if [[ -f "readinglist.xml" ]]; then
+    cp "readinglist.xml" "${output_dir}/readinglist.xml"
+  fi
 
   echo "incrementally built at $(date)"
 }
