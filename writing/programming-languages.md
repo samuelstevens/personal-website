@@ -194,6 +194,7 @@ Also consider Rust.
 - Haskell: apparently a cool language that you don't need to know entirely to be useful, but I don't think I write complicated enough systems to need Haskell. Would it help me with smaller systems?
 - Erlang/Elixir: writing extremely fault-tolerant concurrent systems sounds really cool, but I have no need for one. 
 - Ruby: also apparently really easy to learn, but I have Python and JavaScript. Where does Ruby fit in?
+- Odin, Zig, Scopes, D, Nim? Lots of low-level replacements for C.
 
 You'll notice that most of the time I think I don't need any of these languages because I don't have large enough problems to make it worth it. *That scares me*, because I bet people who write in those languages can't imagine a small enough project for it not to be worth using, i.e., I should just learn those languages and use them for everything already.
 

@@ -11,8 +11,8 @@ keywords:
     pseudoelements,
     pseudo,
     elements,
-    :after,
-    ::after,
+    ":after",
+    "::after",
     guide,
     tutorial,
   ]
